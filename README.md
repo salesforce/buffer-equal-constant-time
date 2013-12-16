@@ -1,5 +1,9 @@
 # buffer-equal-constant-time
 
+Constant-time `Buffer` comparison for node.js.  Should work with browserify too.
+
+[![Build Status](https://travis-ci.org/goinstant/buffer-equal-constant-time.png?branch=master)](https://travis-ci.org/goinstant/buffer-equal-constant-time)
+
 ```sh
   npm install buffer-equal-constant-time
 ```
