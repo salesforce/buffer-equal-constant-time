@@ -1,0 +1,17 @@
+{
+  "name": "buffer-equal-constant-time",
+  "version": "0.9.0",
+  "description": "Constant-time comparison of Buffers",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "keywords": [
+    "buffer",
+    "equal",
+    "constant-time",
+    "crypto"
+  ],
+  "author": "GoInstant Inc., a salesforce.com company",
+  "license": "BSD-3-Clause"
+}
