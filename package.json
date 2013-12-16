@@ -6,6 +6,7 @@
   "scripts": {
     "test": "mocha test.js"
   },
+  "repository": "git@github.com:goinstant/buffer-equal-constant-time.git",
   "keywords": [
     "buffer",
     "equal",
@@ -13,5 +14,8 @@
     "crypto"
   ],
   "author": "GoInstant Inc., a salesforce.com company",
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "mocha": "~1.15.1"
+  }
 }
