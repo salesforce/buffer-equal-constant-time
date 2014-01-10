@@ -20,7 +20,7 @@ function bufferEq(a, b) {
   }
 
   var c = 0;
-  for (var i = 0; i < a.length; i++) {
+  for (var i = 0; !c && i < a.length; i++) {
     /*jshint bitwise:false */
     c |= a[i] ^ b[i]; // XOR
   }
