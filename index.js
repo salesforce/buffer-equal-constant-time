@@ -5,6 +5,16 @@ var SlowBuffer = require('buffer').SlowBuffer;
 
 module.exports = bufferEq;
 
+function intEq(a, b) {
+  var c = ~(a ^ b);
+  c &= c >> 16;
+  c &= c >> 8;
+  c &= c >> 4;
+  c &= c >> 2;
+  c &= c >> 1;
+  return Boolean(c & 1);
+}
+
 function bufferEq(a, b) {
 
   // shortcutting on type is necessary for correctness
@@ -24,7 +34,7 @@ function bufferEq(a, b) {
     /*jshint bitwise:false */
     c |= a[i] ^ b[i]; // XOR
   }
-  return c === 0;
+  return intEq(c, 0);
 }
 
 bufferEq.install = function() {
